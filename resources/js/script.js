@@ -59,6 +59,7 @@ guessBtn.addEventListener('click', function(){
 
       } else {
             setMessage("Sorry, you didn't win this time", 'blue');
+            guessInput.value = "";
 
       }
 });
@@ -66,9 +67,13 @@ guessBtn.addEventListener('click', function(){
 // PLAY RESET EVENT LISTENER 
 // RESET guessesLeft, clear message
 // NEED to RESET THE winningNum
+
 resetBtn.addEventListener('click', function(){
       guessesLeft=5;
       setMessage("Game Reset");
+      guessInput.value = "";
+      
+
 });
 
 // GENERATE COMPUTER"s GUESS
